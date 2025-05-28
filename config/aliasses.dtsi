@@ -3,13 +3,24 @@
 
 // #define U_MS_U &mmv MOVE_UP
 
-#define rgbTG &rgb_ug RGB_TOG
-#define rgbHin &rgb_ug RGB_HUI
-#define rgbHde &rgb_ug RGB_HUD
-#define rgbBin &rgb_ug RGB_BRI
-#define rgbBde &rgb_ug RGB_BRD
-#define rgbSin &rgb_ug RGB_SAI
-#define rgbSde &rgb_ug RGB_SAD
-#define rgbE &rgb_ug RGB_EFF
-#define rgbColF &rgb_ug RGB_COLOR_HSB(325, 48 20)
-#define powTG &ext_power EP_TOG
+// #define rgbTG &rgb_ug RGB_TOG
+// #define rgbHin &rgb_ug RGB_HUI
+// #define rgbHde &rgb_ug RGB_HUD
+// #define rgbBin &rgb_ug RGB_BRI
+// #define rgbBde &rgb_ug RGB_BRD
+// #define rgbSin &rgb_ug RGB_SAI
+// #define rgbSde &rgb_ug RGB_SAD
+// #define rgbE &rgb_ug RGB_EFF
+// #define rgbColF &rgb_ug RGB_COLOR_HSB(325, 48 20)
+// #define powTG &ext_power EP_TOG
+
+#define RGB_TG &rgb_ug RGB_TOG
+#define RGB_HI &rgb_ug RGB_HUI
+#define RGB_HD &rgb_ug RGB_HUD
+#define RGB_BI &rgb_ug RGB_BRI
+#define RGB_BD &rgb_ug RGB_BRD
+#define RGB_SI &rgb_ug RGB_SAI
+#define RGB_SD &rgb_ug RGB_SAD
+#define RGB_E &rgb_ug RGB_EFF
+#define RGB_CF &rgb_ug RGB_COLOR_HSB(325, 48 20)
+#define POW_TG &ext_power EP_TOG
