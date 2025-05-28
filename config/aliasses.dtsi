@@ -1,0 +1,14 @@
+/ {
+    aliases {
+        rgbTG: &rgb_ug RGB_TOG;
+        rgbHin: &rgb_ug RGB_HUI;
+        rgbHde: &rgb_ug RGB_HUD;
+        rgbBin: &rgb_ug RGB_BRI;
+        rgbBde: &rgb_ug RGB_BRD;
+        rgbSin: &rgb_ug RGB_SAI;
+        rgbSde: &rgb_ug RGB_SAD;
+        rgbE: &rgb_ug RGB_EFF;
+        rgbColF: &rgb_ug RGB_COLOR_HSB(325, 48 20);
+        powTG: &ext_power EP_TOG;
+    };
+};
