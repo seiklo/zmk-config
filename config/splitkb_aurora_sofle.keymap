@@ -7,9 +7,9 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/ext_power.h>
+// #include <dt-bindings/zmk/ext_power.h> //moved to aliasses.dtsi
+
 // Here are my Adds
-#include <dt-bindings/zmk/rgb.h>
 #include "aliasses.dtsi"
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1500  // default: 600
@@ -57,8 +57,8 @@ default_layer {
             bindings = <
 &bt BT_CLR &bt BT_SEL 0     &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3 &bt BT_SEL 4                 &trans    &trans    &trans    &trans    &trans    &soft_off
 &kp F1     &kp F2           &kp F3            &kp F4            &kp F5       &kp F6                       &kp F7    &kp F8    &kp F9    &kp F10   &kp F11   &kp F12
-&kp GRAVE  &rgbSin          &rgbHin           &rgbBin           &kp DOLLAR   &kp PRCNT                    &kp CARET &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &kp TILDE
-&rgbTG     &rgbSde          &rgbHde           &rgbBde           &rgbColF     &powTG    &trans   &trans    &trans    &kp MINUS &kp PLUS  &kp LBRC  &kp RBRC  &kp PIPE
+&kp GRAVE  rgbSin           rgbHin            rgbBin            &kp DOLLAR   &kp PRCNT                    &kp CARET &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &kp TILDE
+rgbTG      rgbSde           rgbHde            rgbBde            rgbColF      powTG     &trans   &trans    &trans    &kp MINUS &kp PLUS  &kp LBRC  &kp RBRC  &kp PIPE
                             &trans            &trans            &trans       &trans    &trans   &trans    &trans    &trans    &trans    &trans
             >;
 

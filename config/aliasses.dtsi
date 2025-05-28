@@ -1,14 +1,15 @@
-/ {
-    aliases {
-        rgbTG: &rgb_ug RGB_TOG;
-        rgbHin: &rgb_ug RGB_HUI;
-        rgbHde: &rgb_ug RGB_HUD;
-        rgbBin: &rgb_ug RGB_BRI;
-        rgbBde: &rgb_ug RGB_BRD;
-        rgbSin: &rgb_ug RGB_SAI;
-        rgbSde: &rgb_ug RGB_SAD;
-        rgbE: &rgb_ug RGB_EFF;
-        rgbColF: &rgb_ug RGB_COLOR_HSB(325, 48 20);
-        powTG: &ext_power EP_TOG;
-    };
-};
+#include <dt-bindings/zmk/rgb.h>
+#include <dt-bindings/zmk/ext_power.h>
+
+// #define U_MS_U &mmv MOVE_UP
+
+#define rgbTG &rgb_ug RGB_TOG
+#define rgbHin &rgb_ug RGB_HUI
+#define rgbHde &rgb_ug RGB_HUD
+#define rgbBin &rgb_ug RGB_BRI
+#define rgbBde &rgb_ug RGB_BRD
+#define rgbSin &rgb_ug RGB_SAI
+#define rgbSde &rgb_ug RGB_SAD
+#define rgbE &rgb_ug RGB_EFF
+#define rgbColF &rgb_ug RGB_COLOR_HSB(325, 48 20)
+#define powTG &ext_power EP_TOG
