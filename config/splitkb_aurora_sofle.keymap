@@ -7,6 +7,8 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/ext_power.h>
+#include <dt-bindings/zmk/rgb.h>
 
 // Here are my Adds
 // #include "aliasses.dtsi"
@@ -23,23 +25,20 @@
     // chain-length = <35>; // Uncomment if using both per-key and underglow LEDs
     chain-length = <29>; // Uncomment if using only per-key LEDs.
 };
- // LED comment Block
 
  // #defines for RGB and Power
 
-#define RGB_TG &rgb_ug RGB_TOG
-#define RGB_HI &rgb_ug RGB_HUI
-#define RGB_HD &rgb_ug RGB_HUD
-#define RGB_BI &rgb_ug RGB_BRI
-#define RGB_BD &rgb_ug RGB_BRD
-#define RGB_SI &rgb_ug RGB_SAI
-#define RGB_SD &rgb_ug RGB_SAD
-#define RGB_E &rgb_ug RGB_EFF
-#define RGB_CF &rgb_ug RGB_COLOR_HSB(325, 48 20)
-#define POW_TG &ext_power EP_TOG
+// #define RGB_TG &rgb_ug RGB_TOG
+// #define RGB_HI &rgb_ug RGB_HUI
+// #define RGB_HD &rgb_ug RGB_HUD
+// #define RGB_BI &rgb_ug RGB_BRI
+// #define RGB_BD &rgb_ug RGB_BRD
+// #define RGB_SI &rgb_ug RGB_SAI
+// #define RGB_SD &rgb_ug RGB_SAD
+// #define RGB_E &rgb_ug RGB_EFF
+// #define RGB_CF &rgb_ug RGB_COLOR_HSB(325, 48 20)
+// #define POW_TG &ext_power EP_TOG
 
-#include <dt-bindings/zmk/rgb.h>
-#include <dt-bindings/zmk/ext_power.h>
 
 / {
     keymap {
@@ -68,14 +67,14 @@ default_layer {
 // | BTCLR | BT1 | BT2 |  BT3 |  BT4 |  BT5 |                   |      |       |       |      |       |SOFT_OFF|
 // |  F1   |  F2 |  F3 |  F4  |  F5  |  F6  |                   |  F7  |  F8   |  F9   |  F10 |  F11  |   F12  |
 // |   `   | SAi | HUi | BRi  |  $   |  %   |                   |  ^   |  &    |  *    |  (   |   )   |    ~   |
-// | RGBTG | SAd | HUd | BRd  | ColF |PowTG |        |  |       |      |  _    |  +    |  {   |   }   |   "|"  |
+// | RGBTG | SAd | HUd | BRd  |      |PowTG |        |  |       |      |  _    |  +    |  {   |   }   |   "|"  |
 //               |     |      |      |      |        |  |       |      |       |       |      |
             bindings = <
-&bt BT_CLR &bt BT_SEL 0     &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3 &bt BT_SEL 4                 &trans    &trans    &trans    &trans    &trans    &soft_off
-&kp F1     &kp F2           &kp F3            &kp F4            &kp F5       &kp F6                       &kp F7    &kp F8    &kp F9    &kp F10   &kp F11   &kp F12
-&kp GRAVE  RGB_SI           RGB_HI            RGB_BI            &kp DOLLAR   &kp PRCNT                    &kp CARET &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &kp TILDE
-RGB_TG     RGB_SD           RGB_HD            RGB_BD            RGB_CF       POW_TG    &trans   &trans    &trans    &kp MINUS &kp PLUS  &kp LBRC  &kp RBRC  &kp PIPE
-                            &trans            &trans            &trans       &trans    &trans   &trans    &trans    &trans    &trans    &trans
+&bt BT_CLR      &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2      &bt BT_SEL 3 &bt BT_SEL 4                          &trans    &trans    &trans    &trans    &trans    &soft_off
+&kp F1          &kp F2          &kp F3          &kp F4            &kp F5       &kp F6                                &kp F7    &kp F8    &kp F9    &kp F10   &kp F11   &kp F12
+&kp GRAVE       &rgb_ug RGB_SAI &rgb_ug RGB_HUI &rgb_ug RGB_BRI   &kp DOLLAR   &kp PRCNT                             &kp CARET &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &kp TILDE
+&rgb_ug RGB_TOG &rgb_ug RGB_SAD &rgb_ug RGB_HUD &rgb_ug RGB_BRD   &trans       &ext_power EP_TOG  &trans   &trans    &trans    &kp MINUS &kp PLUS  &kp LBRC  &kp RBRC  &kp PIPE
+                                &trans          &trans            &trans       &trans             &trans   &trans    &trans    &trans    &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
