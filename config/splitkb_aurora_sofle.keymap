@@ -10,6 +10,7 @@
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/outputs.h>
+#include "keys_de.h"
 
 // Here are my Adds
 // #include "aliasses.dtsi"
@@ -37,13 +38,13 @@ default_layer {
 // ------------------------------------------------------------------------------------------------------------
 // |  ESC  |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |   `   |
 // |  ESC  |  Q  |  W  |  F   |  P   |  G   |                   |  J   |  L    |  U    |  Z   |   ;   |  BSPC | Minus = ß
-// |L3-TAB |  A  |  R  |  S   |  T   |  D   |                   |  H   |  N    |  E    |  I   |   O   |L3-sqt |
+// |L3-TAB |  A  |  R  |  S   |  T   |  D   |                   |  H   |  N    |  E    |  I   |   O   |L3-sqt |ä
 // | SHIFT |  Y  |  X  |  C   |  V   |  B   |   "["  |  |  "]"  |  K   |  M    |  ,    |  .   |   /   | SHIFT |
 //               |LGUI | ALT  | CTRL |L1-RET|  SPACE |  | SHiFT |L2-RET| CTRL  | RALT  | RGUI |
     bindings = <
         &kp ESC    &kp N1 &kp N2    &kp N3   &kp N4    &kp N5                          &kp N6    &kp N7    &kp N8    &kp N9   &kp N0   &kp GRAVE
         &kp ESC    &kp Q  &kp W     &kp F    &kp P     &kp G                           &kp J     &kp L     &kp U     &kp Z    &kp SEMI &kp BSPC
-        &lt 3 TAB  &kp A  &kp R     &kp S    &kp T     &kp D                           &kp H     &kp N     &kp E     &kp I    &kp O    &lt 3 SQT
+        &lt 3 TAB  &kp A  &kp R     &kp S    &kp T     &kp D                           &kp H     &kp N     &kp E     &kp I    &kp O    &lt 3 DE_A_UML
         &kp LSHFT  &kp Y  &kp X     &kp C    &kp V     &kp B      &kp LBKT   &kp RBKT  &kp K     &kp M     &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
                           &kp LGUI  &kp LALT &kp LCTRL &lt 1 RET  &kp SPACE  &kp LSHFT &lt 2 RET &kp LCTRL &kp RALT  &kp RGUI
     >;
