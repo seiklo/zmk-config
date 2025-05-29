@@ -38,7 +38,7 @@ default_layer {
 // ------------------------------------------------------------------------------------------------------------
 // |  ESC  |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |   `   |
 // |  ESC  |  Q  |  W  |  F   |  P   |  G   |                   |  J   |  L    |  U    |  Z   |   ;   |  BSPC | Minus = ß
-// |L3-TAB |  A  |  R  |  S   |  T   |  D   |                   |  H   |  N    |  E    |  I   |   O   |L3-sqt |ä
+// |L3-TAB |  A  |  R  |  S   |  T   |  D   |                   |  H   |  N    |  E    |  I   |   O   |L3-sqt |
 // | SHIFT |  Y  |  X  |  C   |  V   |  B   |   "["  |  |  "]"  |  K   |  M    |  ,    |  .   |   /   | SHIFT |
 //               |LGUI | ALT  | CTRL |L1-RET|  SPACE |  | SHiFT |L2-RET| CTRL  | RALT  | RGUI |
     bindings = <
