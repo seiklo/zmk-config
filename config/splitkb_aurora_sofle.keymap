@@ -46,9 +46,9 @@
             then-layer = <ADJUST>;
         };
     };
-};
 
-/ {
+
+
     keymap {
         compatible = "zmk,keymap";
 
