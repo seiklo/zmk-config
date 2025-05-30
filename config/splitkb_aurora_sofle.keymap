@@ -32,8 +32,8 @@
 #define BRK 3
 #define SYS 4
 
-// #define DSK_PR  &kp LG(LC(LEFT)) // Previous desktop.
-// #define DSK_NX  &kp LG(LC(RIGHT)) // Next     desktop.
+#define DSK_PR  &kp LG(LC(LEFT)) // Previous desktop.
+#define DSK_NX  &kp LG(LC(RIGHT)) // Next     desktop.
 
 / {
     // Activate SYS layer by pressing CUR and MOS
@@ -80,7 +80,7 @@
 //               |      |      |      |      |        |  |       |      |       |       |      |
             bindings = <
 &trans      &trans      &trans     &trans    &trans     &trans                      &trans    &trans  &trans  &trans  &trans  &trans                       
-&trans      &trans      &kp N1     &kp UP    &kp N2     &kp C_VOL_UP                &kp N1    &kp N2  &kp N3  &kp N4  &kp N5  &kp DEL
+&trans      &trans      &kp DSK_PR &kp UP    &kp DSK_NX &kp C_VOL_UP                &kp N1    &kp N2  &kp N3  &kp N4  &kp N5  &kp DEL
 &trans      &trans      &kp LEFT   &kp DOWN  &kp RIGHT  &kp C_VOL_DN                &kp F1    &kp F2  &kp F3  &kp F4  &kp F5  &kp F6
 &trans      &trans      &kp LC(X)  &kp LC(C) &kp LC(V)  &trans     &trans &trans    &kp F7    &kp F8  &kp F9  &kp F10 &kp F11 &kp F12
                         &trans     &trans    &trans     &trans     &trans &trans    &trans    &trans  &trans  &trans
