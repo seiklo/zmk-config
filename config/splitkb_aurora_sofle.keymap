@@ -20,11 +20,11 @@
 #include <dt-bindings/zmk/pointing.h>
 
 // Uncomment this block if using RGB
-&led_strip {
-    // chain-length = <6>;
-    chain-length = <35>; // Uncomment if using both per-key and underglow LEDs
-    // chain-length = <29>; // Uncomment if using only per-key LEDs.
-};
+// &led_strip {
+//     // chain-length = <6>;
+//     chain-length = <35>; // Uncomment if using both per-key and underglow LEDs
+//     // chain-length = <29>; // Uncomment if using only per-key LEDs.
+// };
 
 #define BAS 0
 #define CUR 1
@@ -74,13 +74,13 @@
 
         cursor_layer {
 // ------------------------------------------------------------------------------------------------------------
-// |       |     |      |      |AltF4 | F5   |                   |      |       |       |      |       |       |
+// |       |     |  F2  |      |AltF4 | F5   |                   |      |       |       |      |       |       |
 // |       |YTsp+|DskPrv|   ^  |DskNxt| VolUP|                   |FwTick|  DQT  |  ü    |   ß  |       |  DEL  |
 // |       |YTsp-| <-   |   v  |  ->  | VolDN|                   |BkTick|  F2   |  €    |  F4  |  F5   |  F6   |
 // |       |Alt< | CtX  | CtC  | CtV  | Alt> |        |  |       |  SQT |  F8   |  F9   |  F10 |  F11  |  F12  |
 //               |      |      |      |      |        |  |       |      |       |       |      |
             bindings = <
-&trans      &trans        &trans     &trans    &kp LA(F4) &kp F5                         &trans       &trans     &trans       &trans    &trans  &trans                       
+&trans      &trans        &kp F2     &trans    &kp LA(F4) &kp F5                         &trans       &trans     &trans       &trans    &trans  &trans                       
 &trans      &kp LS(DOT)   DSK_PR     &kp UP    DSK_NX     &kp C_VOL_UP                   &kp DE_ACUTE &kp DE_DQT &kp DE_U_UML &kp DE_SZ &kp N5  &kp DEL
 &trans      &kp LS(COMMA) &kp LEFT   &kp DOWN  &kp RIGHT  &kp C_VOL_DN                   &kp DE_GRAVE &kp F2     &kp DE_EURO  &kp F4    &kp F5  &kp F6
 &trans      &kp LA(LEFT)  &kp LC(X)  &kp LC(C) &kp LC(V)  &kp LA(RIGHT) &trans &trans    &kp DE_SQT   &kp F8     &kp F9       &kp F10   &kp F11 &kp F12
