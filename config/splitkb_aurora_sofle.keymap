@@ -55,15 +55,15 @@
         base_layer {
 // ------------------------------------------------------------------------------------------------------------
 // |  ESC   |  1  |  2  |  3   |  4   |   5   |                   |   6   |  7    |  8    |  9   |   0   |   `   |
-// |  ESC   |  Q  |  W  |  F   |  P   |   G   |                   |   J   |  L    |  U    |  Z   |   ö   |  BSPC |
-// |MOS-TAB |  A  |  R  |  S   |  T   |   D   |                   |   H   |  N    |  E    |  I   |   O   | MOS-ä |
-// | SHIFT  |  Y  |  X  |  C   |  V   |   B   |   "["  |  |  "]"  |   K   |  M    |  ,    |  .   |   /   | SHIFT |
+// |  ESC   |  Q  |  W  |  F   |  P   |   B   |                   |   J   |  L    |  U    |  Z   |   ö   |  BSPC |
+// |MOS-TAB |  A  |  R  |  S   |  T   |   G   |                   |   M   |  N    |  E    |  I   |   O   | MOS-ä |
+// | SHIFT  |  Y  |  X  |  C   |  D   |   V   |   "["  |  |  "]"  |   K   |  H    |  ,    |  .   |   /   | SHIFT |
 //                |LGUI | ALT  | CTRL |CUR-RET|  SPACE |  | SHiFT |BRK-RET| CTRL  | RALT  | RGUI |
     bindings = <
         &kp ESC     &kp N1 &kp N2    &kp N3   &kp N4    &kp N5                            &kp N6      &kp N7    &kp N8    &kp N9   &kp N0       &kp GRAVE
-        &kp ESC     &kp Q  &kp W     &kp F    &kp P     &kp G                             &kp J       &kp L     &kp U     &kp Z    &kp DE_O_UML &kp BSPC
-        &lt MOS TAB &kp A  &kp R     &kp S    &kp T     &kp D                             &kp H       &kp N     &kp E     &kp I    &kp O        &lt MOS DE_A_UML
-        &kp LSHFT   &kp Y  &kp X     &kp C    &kp V     &kp B        &kp LBKT   &kp RBKT  &kp K       &kp M     &kp COMMA &kp DOT  &kp FSLH     &kp RSHFT
+        &kp ESC     &kp Q  &kp W     &kp F    &kp P     &kp B                             &kp J       &kp L     &kp U     &kp Z    &kp DE_O_UML &kp BSPC
+        &lt MOS TAB &kp A  &kp R     &kp S    &kp T     &kp G                             &kp M       &kp N     &kp E     &kp I    &kp O        &lt MOS DE_A_UML
+        &kp LSHFT   &kp Y  &kp X     &kp C    &kp D     &kp V        &kp LBKT   &kp RBKT  &kp K       &kp H     &kp COMMA &kp DOT  &kp FSLH     &kp RSHFT
                            &kp LGUI  &kp LALT &kp LCTRL &lt CUR RET  &kp SPACE  &kp LSHFT &lt BRK RET &kp LCTRL &kp RALT  &kp RGUI
     >;
 
