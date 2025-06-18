@@ -75,13 +75,13 @@
         cursor_layer {
 // ------------------------------------------------------------------------------------------------------------
 // |       |     |  F2  |      |AltF4 | F5   |                   |      |       |       |      |       |       |
-// |       |YTsp+|DskPrv|   ^  |DskNxt| VolUP|                   |FwTick|  DQT  |  ü    |   ß  |       |  DEL  |
+// |  DEL  |YTsp+|DskPrv|   ^  |DskNxt| VolUP|                   |FwTick|  DQT  |  ü    |   ß  |       |  DEL  |
 // |       |YTsp-| <-   |   v  |  ->  | VolDN|                   |BkTick|  !    |  ?    |   €  |       |       |
 // |       |Alt< | CtX  | CtC  | CtV  | Alt> |        |  |       |  SQT |  &    |  $    |      |       |       |
 //               |      |      |      |      |        |  |       |      |       |       |      |
             bindings = <
 &trans      &trans        &kp F2     &trans    &kp LA(F4) &kp F5                         &trans       &trans      &trans       &trans      &trans  &trans                       
-&trans      &kp LS(DOT)   DSK_PR     &kp UP    DSK_NX     &kp C_VOL_UP                   &kp DE_ACUTE &kp DE_DQT  &kp DE_U_UML &kp DE_SZ   &kp N5  &kp DEL
+&kp DEL     &kp LS(DOT)   DSK_PR     &kp UP    DSK_NX     &kp C_VOL_UP                   &kp DE_ACUTE &kp DE_DQT  &kp DE_U_UML &kp DE_SZ   &kp N5  &kp DEL
 &trans      &kp LS(COMMA) &kp LEFT   &kp DOWN  &kp RIGHT  &kp C_VOL_DN                   &kp DE_GRAVE &kp DE_EXCL &kp DE_QMARK &kp DE_EURO &kp F5  &trans
 &trans      &kp LA(LEFT)  &kp LC(X)  &kp LC(C) &kp LC(V)  &kp LA(RIGHT) &trans &trans    &kp DE_SQT   &trans      &trans       &trans      &trans  &trans
                           &trans     &trans    &trans     &trans        &trans &trans    &trans       &trans      &trans       &trans
